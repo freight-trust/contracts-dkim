@@ -19,28 +19,3 @@ $ cd solidity-dkim
 $ npm install
 ```
 
-Start [ganache](https://www.trufflesuite.com/docs/ganache/quickstart)
-
-Download email from your inbox
-
-![download](/Screenshot.png)
-
-Test with raw email
-
-```
-$ RAW_EMAIL=<path to your email file> npm run test
-# example
-$ RAW_EMAIL=test/data/gmail-raw.txt npm run test
-```
-
-## 3rd party Smart Contracts
-
-- [https://github.com/Arachnid/solidity-stringutils](https://github.com/Arachnid/solidity-stringutils)
-- [https://github.com/ensdomains/buffer](https://github.com/ensdomains/buffer)
-- [https://github.com/ensdomains/solsha1](https://github.com/ensdomains/solsha1)
-
-## Troubleshoot
-
-**no header boundary found**: The raw email must be in "network normal" format (text is ASCII encoded, lines are separated with CRLF characters, etc.). The downloaded files should work just fine, but if you copy the email content to your text editor, you may need to replace `\n` with `\r\n`, e.g. `input = input.replace(new RegExp("\n", 'g'), "\r\n")`
-
-**dns query error**: The library is using hardcode `_domainkey` records and your email domain is not in the current list. In the future, we'll need a proper oracle that can read the `_domainkey` record for any arbitrary domain.

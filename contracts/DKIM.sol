@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity >=0.4.24;
 
 import "./utils/Strings.sol";
 import "./Algorithm.sol";
@@ -14,6 +14,11 @@ library Hardcode {
         }
         if ("gmail.com".toSlice().equals(domain) && "20161025".toSlice().equals(selector)) {
             modulus = hex"be23c6064e1907ae147d2a96c8089c751ee5a1d872b5a7be11845056d28384cfb59978c4a91b4ffe90d3dec0616b3926038f27da4e4d254c8c1283bc9dcdabeac500fbf0e89b98d1059a7aa832893b08c9e51fcea476a69511be611250a91b6a1204a22561bb87b79f1985a687851184533d93dfab986fc2c02830c7b12df9cf0e3259e068b974e3f6cf99fa63744c8b5b23629a4efad425fa2b29b3622443373d4c389389ececc5692e0f15b54b9f49b999fd0754db41a4fc16b8236f68555f9546311326e56c1ea1fe858e3c66f3a1282d440e3b487579dd2c198c8b15a5bab82f1516f48c4013063319c4a06789f943c5fc4e7768c2c0d4ce871c3c51a177";
+            exponent = hex"010001";
+            return;
+        }
+        if ("freighttrust.com".toSlice().equals(domain) && "default".toSlice().equals(selector)) {
+            modulus = hex"qIBmD8gGB6BdSYNkZfHgYxsQfD9nomkB1wlZLoJM8Ea5t82Qjz2oBUuRgD0Xe2ZfsjZEeC4c7ZoSV3oDqeKUhqN6bqpaDmPXNgu3Kch9aEdzDSwbn3D5NHY5OK5quCS+L/O+q81paT/nJQkaSnOB2slykCYZgrY/1+ANuLGlBFUp6fT8Ll7gfHS5wihm4DpghfW8ZBNIghm5Zp3vZzQIAfU1td3OEA5jPUvkjw4Nj5a9JBs1WpzoFJrn17scw057PY/jH0BIJ+uM4WDR7ekJoTl1WAzHCm6xd8FAdpaPkEwxTMg4tiRxSziW+lclmeA/w6Vzn696Wjj1+R40lJhUOA";
             exponent = hex"010001";
             return;
         }

@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity >=0.4.24;
 
 import "@ensdomains/solsha1/contracts/SHA1.sol";
 import "@ensdomains/buffer/contracts/Buffer.sol";

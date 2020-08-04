@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "@ensdomains/buffer": "0.0.10",
-    "@ensdomains/solsha1": "0.0.2"
+    "@ensdomains/solsha1": "0.0.2",
+    "@truffle/hdwallet-provider": "^1.0.40",
+    "solidity-docgen": "^0.5.4"
   },
   "devDependencies": {
     "@openzeppelin/test-helpers": "^0.5.3",
